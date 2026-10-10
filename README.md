@@ -1,6 +1,4 @@
 # Bright-Coffee-Shop-Analysis
-Bright Coffee Shop Sales Analysis
-
 Project Overview
 
 This project analyses Bright Coffee Shop's transactional sales data to identify revenue-generating products, peak sales periods, and opportunities to improve business performance using data analytics and visualization.
