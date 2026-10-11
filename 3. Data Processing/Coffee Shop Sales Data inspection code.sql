@@ -40,3 +40,16 @@ SELECT DISTINCT product_category,
 FROM sales
 WHERE product_category IN ('Coffee')
 ORDER BY product_type;
+
+-- Total Drinks sold by Category
+SELECT product_category, sum(transaction_qty) as Total_Drinks_Sold from sales
+GROUP BY product_category;
+
+-- 5 Best Sellers by total drinks sold
+SELECT product_detail, sum(transaction_qty) as units_sold from sales
+GROUP BY product_detail ORDER BY SUM(transaction_qty) DESC LIMIT 5;
+
+-- 5 Worst Sellers by total drinks sold
+SELECT product_detail, sum(transaction_qty) as Total_Units_Sold from sales
+GROUP BY product_detail ORDER BY SUM(transaction_qty) LIMIT 5;
+    
